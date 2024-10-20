@@ -1,0 +1,379 @@
+/* Grid principal para el cuerpo */
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "acerca-de"
+    "como-ayudar"
+    "testimonios"
+    "imagenes"
+    "formulario"
+    "footer";
+    grid-template-columns: 1fr;
+    }
+    
+    /* Estilos generales */
+    section,
+    footer {
+    padding: 60px 20px;
+    text-align: center;
+    }
+
+
+    /* Estilos del header */
+header {
+    height: 80px;
+    background-color: #4e54c8;
+    color: #ffffff;
+    grid-area: header;
+    background: linear-gradient(135deg, #37b9c8 0%, #51d0de 100%);
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    box-sizing: border-box;
+}
+ 
+
+/* Estilos del nombre de la empresa */
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+header .home {
+    margin-right: 20px; 
+}
+
+header .home img {
+    height: 50px; 
+    width: auto;  
+}
+
+/* Estilos de la sección "Acerca de Nosotros" */
+#acerca-de {
+    grid-area: acerca-de;
+    background-color: #ffffff;
+    color: #333;
+}
+
+#acerca-de h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #bf4aa8;
+    position: relative;
+}
+
+#acerca-de h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #bf4aa8;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#acerca-de p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Estilos de la sección "Cómo Puedes Ayudar" */
+#como-ayudar {
+    grid-area: como-ayudar;
+    background-color: #f0f4ff;
+    text-align: left;
+}
+
+#como-ayudar h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #51d0de;
+    position: relative;
+}
+
+#como-ayudar h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #51d0de;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#como-ayudar p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Estilos de la sección "Testimonios" */
+#testimonios {
+    grid-area: testimonios;
+    background-color: #ffffff;
+    color: #333;
+}
+    
+#testimonios h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #bf4aa8;
+    position: relative;
+}
+    
+#testimonios h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #bf4aa8;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+    
+#testimonios p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+  
+.container {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: space-between;  
+    margin: 20px;
+    padding: 10px;
+}
+    
+.column1, .column2, .column3 {
+    background-color:  #9ff4fd;
+    border: solid 3px #000000;
+    margin: 10px;
+    padding: 35px;
+    box-sizing: border-box;  
+    flex: 1;  
+    min-width: 0;
+    border-radius: 5%;
+}
+    
+/* Estilos de la sección "Imagenes" */
+#imagenes {
+    grid-area: imagenes;
+    background-color: #f0f4ff;
+    color: #333;
+}
+
+#imagenes h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color:  #51d0de;
+    position: relative;
+}
+
+#imagenes h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color:  #51d0de;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#imagenes p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: space-between;  
+    margin: 5px;
+    padding: 5px;
+}
+    
+.img1, .img2, .img3 {
+    background-color: #f6dcf1;
+    margin: 20px;
+    padding: 6px;
+    box-sizing: border-box;  
+    flex: 1;  
+    height: auto;
+    min-width: 0;
+}
+
+    /* Estilos de la sección "Formulario" */
+#formulario {
+    grid-area: formulario;
+    background-color: #ffffff;
+    color: #333;
+}
+
+#formulario h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #51d0de;
+    position: relative;
+}
+
+#formulario h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #51d0de;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#formulario p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+    
+.form-row {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+    margin-top: 20px; 
+}
+
+ 
+#subscription-form {
+    display: none; 
+}
+
+ 
+#subscribe-button {
+    display: block; 
+    margin-top: 20px; 
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #bf4aa8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ 
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;  
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #bf4aa8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:#de85cc;  
+}
+
+ 
+@media (min-width: 769px) {
+    #subscribe-button {
+        display: none;  
+    }
+
+    #subscription-form {
+        display: block;  
+    }
+}
+    
+/* Estilos del footer */
+footer {
+    grid-area: footer;
+    background-color: #1c3248;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+    
+    
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+   
+    header {
+        height: 80px; 
+        padding: 0 10px; 
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header .home img {
+        height: 50px; 
+        width: auto;  
+    }
+
+     
+    section, footer {
+        padding: 40px 20px;  
+        text-align: center;
+    }
+
+     
+    .container, .container1 {
+        flex-direction: column;  
+    }
+
+   
+    .column1, .column2, .column3, .img1, .img2, .img3 {
+        flex: 1 1 100%;  
+    }
+
+    body {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
