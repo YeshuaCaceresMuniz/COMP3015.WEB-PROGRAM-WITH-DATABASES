@@ -1,0 +1,63 @@
+.navbar-title {
+    font-size: 1.8rem;  
+    font-weight: bold;  
+    color: #3e7b48;  
+    
+}
+
+.hero {
+    background-image: url('./Images/background5.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  
+}
+
+.hero p {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);  
+}
+
+/* Custom styles */
+.navbar-custom {
+    background-color: #E3DCD2;  
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #333;  
+}
+
+.navbar-custom .nav-link:hover {
+    color: #000;  
+}
+
+ 
+.card {
+    background-color: #fc7046;  
+    color: white; 
+}
+
+ 
+.text-muted {
+    color: black !important;  
+}
+
+.btn-dona {
+    background-color: #FF5722;  
+    color: white;  
+}
+
+.donate-background {
+    background-color: #d1d1d1 !important; /* Cambia este valor por el color que desees */
+}
+
+
+
