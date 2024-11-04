@@ -1,0 +1,77 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Trirong", serif; /* Todo texto en el cuerpo tendra el font Trirong */
+} 
+
+h2 {
+    font-weight: bold;
+}
+
+#reload-game {
+    background-color: #e28c29;
+    color:#fffbfb;
+}
+
+#alertButton {
+    background-color: #e28c29;
+    color: #fffbfb;
+}
+
+#game-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; / 
+}
+
+/* Configuración de #game-board */
+#game-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 120px;
+}
+
+/* Estilos de las cartas */
+.card {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: linear-gradient(45deg, #e28c29 50%, #0c2266 50%);
+    background-size: 10px 10px;
+    background-size: 20px 20px;  
+    color: transparent;  
+    border: 4px solid #070707;
+    transition: all 0.3s ease;  
+}
+
+.card.flipped,
+.card.matched {
+    background: white;
+    color: #000;
+    border: 2px solid #ccc;
+}
+
+.navbar{
+    text-shadow: 5px 5px 5px #0a0a09;
+    font-weight: bold;
+}
+
+
